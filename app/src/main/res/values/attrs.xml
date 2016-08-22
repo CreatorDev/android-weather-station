@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DiamondView">
+        <attr name="diamondColorLight" format="color" />
+        <attr name="diamondColorDark" format="color" />
+    </declare-styleable>
+</resources>

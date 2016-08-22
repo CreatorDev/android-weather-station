@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WeatherStation</string>
+
+    <!-- login fragment -->
+    <string name="keep_me_signed_in">Keep me signed in</string>
+    <string name="login_with_creator_account">Log in with Your Creator account</string>
+
+    <!-- login error messages -->
+    <string name="login_err_notfound"></string>
+    <string name="error_login_unauthorized">Invalid username or password</string>
+    <string name="error_login_not_found">User with specified name not found</string>
+    <string name="error_network">Network error</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="log_in_button_text">Sign in</string>
+    <string name="set_group_name">Set group name</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="max">Max:</string>
+    <string name="min">Min:</string>
+    <string name="unattached">Unattached</string>
+    <string name="confirm_group_removal">Confirm group delete</string>
+    <string name="delete">delete</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginTop="@dimen/activity_vertical_margin"
+              android:layout_marginLeft="@dimen/dashboard_item_margin"
+              android:layout_marginRight="@dimen/dashboard_item_margin"
+              android:layout_marginBottom="@dimen/dashboard_item_margin"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <ImageButton
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/theme_purple"
+            android:src="@drawable/ic_mode_edit_black_24dp"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/edit_button"
+            android:layout_marginRight="@dimen/dashboard_item_margin"
+            android:layout_centerVertical="true"
+            android:tint="@color/theme_purple"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:background="@null"/>
+
+
+    </RelativeLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_light_purple"
+        android:layout_below="@+id/container"/>
+
+</RelativeLayout>

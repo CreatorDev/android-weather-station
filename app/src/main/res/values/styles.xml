@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/theme_purple</item>
+        <item name="colorPrimaryDark">@color/theme_dark_purple</item>
+        <item name="colorAccent">@color/theme_light_purple</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+    <style name="BaseButton"></style>
+
+    <style name="CreatorButton" parent="BaseButton">
+        <item name="android:background">@drawable/base_button_selector</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">@drawable/base_button_text_color_selector</item>
+    </style>
+
+</resources>

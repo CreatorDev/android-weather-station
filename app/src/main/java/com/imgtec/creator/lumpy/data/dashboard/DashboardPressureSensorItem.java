@@ -29,29 +29,34 @@
  *
  */
 
-package com.imgtec.creator.lumpy;
+package com.imgtec.creator.lumpy.data.dashboard;
 
-import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import android.content.res.Resources;
 
-import static org.junit.Assert.assertEquals;
+import com.imgtec.creator.lumpy.data.api.Sensor;
 
-/**
- * Instrumentation test, which will execute on an Android device.
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
-@RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest {
-  @Test
-  public void useAppContext() throws Exception {
-    // Context of the app under test.
-    Context appContext = InstrumentationRegistry.getTargetContext();
+import java.text.DecimalFormat;
 
-    assertEquals("com.imgtec.creator.lumpy", appContext.getPackageName());
+public class DashboardPressureSensorItem extends DashboardGenericSensorItem {
+
+
+  public DashboardPressureSensorItem(Sensor sensor) {
+    super(sensor);
+  }
+
+  @Override
+  public DecimalFormat getDecimalFormat() {
+    return new DecimalFormat("0");
+  }
+
+  @Override
+  public float getCurrentValueFontSize(Resources resources) {
+    return super.getCurrentValueFontSize(resources) * 0.8f;
+  }
+
+  @Override
+  public float getUnitFontSize(Resources resources) {
+    return super.getUnitFontSize(resources) * 0.8f;
   }
 }

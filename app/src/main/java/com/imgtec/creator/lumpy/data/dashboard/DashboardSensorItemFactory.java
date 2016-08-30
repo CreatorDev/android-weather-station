@@ -29,29 +29,20 @@
  *
  */
 
-package com.imgtec.creator.lumpy;
+package com.imgtec.creator.lumpy.data.dashboard;
 
-import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import com.imgtec.creator.lumpy.data.api.PressureSensor;
+import com.imgtec.creator.lumpy.data.api.Sensor;
 
-import static org.junit.Assert.assertEquals;
+public class DashboardSensorItemFactory {
 
-/**
- * Instrumentation test, which will execute on an Android device.
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
-@RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest {
-  @Test
-  public void useAppContext() throws Exception {
-    // Context of the app under test.
-    Context appContext = InstrumentationRegistry.getTargetContext();
 
-    assertEquals("com.imgtec.creator.lumpy", appContext.getPackageName());
+  public static final DashboardGenericSensorItem createItem(Sensor sensor) {
+    if (sensor instanceof PressureSensor) {
+      return new DashboardPressureSensorItem(sensor);
+    } else {
+      return new DashboardGenericSensorItem(sensor);
+    }
   }
 }

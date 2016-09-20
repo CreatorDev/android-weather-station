@@ -54,7 +54,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <action android:name="android.intent.action.VIEW"/>
-                <data android:scheme="io.creatordev.iup"/>
+                <data android:scheme="io.creatordev.weatherstation"/>
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />

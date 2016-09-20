@@ -155,8 +155,8 @@ public class LoginFragment extends BaseFragment {
 
   private void login() {
 
-    final String client_id ="41e2bb5a-8e66-43dc-a4bb-31b7a9041b8f";
-    final Uri redirectUri = Uri.parse("io.creatordev.iup:/callback");
+    final String client_id ="600275e7-5476-4ff0-b49c-549686371a83";
+    final Uri redirectUri = Uri.parse("io.creatordev.weatherstation:/callback");
     final String nonce = UUID.randomUUID().toString();
     final String state = "dummy_state";
 

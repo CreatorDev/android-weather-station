@@ -1,5 +1,14 @@
 ![](docs/img.png)
 
+## Build Status
+
+Master
+[![Build Status](https://travis-ci.org/CreatorDev/android-weather-station.svg?branch=master)](https://github.com/CreatorDev/android-weather-station)
+
+
+Dev
+[![Build Status](https://travis-ci.org/CreatorDev/android-weather-station.svg?branch=dev)](https://github.com/CreatorDev/android-weather-station)
+
 ## The WeatherStation mobile app
 WeatherStation mobile app is part of a bigger project. Using code from this respository You will
 be able to read sensor values from all the sensors connected to You weather station.
